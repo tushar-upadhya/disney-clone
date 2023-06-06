@@ -42,7 +42,7 @@ const Header = () => {
     ];
 
     return (
-        <div class="flex items-center justify-between p-5">
+        <div class="flex items-center justify-between p-5 ">
             <div class="flex gap-8 items-center">
                 <img
                     class="w-20 md:w-32 object-cover hidden sm:block "
