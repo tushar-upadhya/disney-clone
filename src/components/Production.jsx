@@ -1,8 +1,8 @@
 import disney from "../assets/disney.png";
-import pixer from "../assets/pixar.png";
+import pixer from "../assets/pixer.png";
 import national from "../assets/nationalG.png";
 import startwar from "../assets/starword.png";
-import marvel from "../assets/Marvel Studios-Logo-PNG6.png";
+import marvel from "../assets/marvel.png";
 
 const Production = () => {
     const productList = [
@@ -29,10 +29,13 @@ const Production = () => {
     ];
 
     return (
-        <div className="flex gap-2 md:gap-5 p-2 px-5 md:px-16">
+        <div className="flex justify-center gap-2 md:gap-5 px-5 md:px-16">
             {productList.map((item) => (
-                <div className="border-[2px] border-gray-500 rounded-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
-                    <img src={item.image} alt="banner" className="w-full " />
+                <div
+                    key={item.id}
+                    className="border-[2px] border-gray-500 rounded-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer shadow-xl shadow-gray-900"
+                >
+                    <img src={item.image} alt="banner" className="w-full" />
                 </div>
             ))}
         </div>
