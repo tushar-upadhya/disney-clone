@@ -1,4 +1,4 @@
-import logo from "../../assets/image/disney.png ";
+import logo from "../../assets/image/logo.png";
 import user from "../../assets/user.jpg";
 
 import {
@@ -9,7 +9,7 @@ import {
     HiTv,
 } from "react-icons/hi2";
 
-import { HiPlus, HiDotsVertical } from "react-icons/hi";
+import { HiPlus } from "react-icons/hi";
 
 import HeaderItem from "./HeaderItem";
 
@@ -50,7 +50,11 @@ const Header = () => {
                     alt="logo"
                 />
                 {menu.map((item) => (
-                    <HeaderItem name={item.name} Icon={item.icon} />
+                    <HeaderItem
+                        key={item.name}
+                        name={item.name}
+                        Icon={item.icon}
+                    />
                 ))}
             </div>
             <img src={user} alt="user_image" class="w-10 rounded-full " />

@@ -42,9 +42,12 @@ const Production = () => {
     return (
         <>
             <div className="flex gap-2 md:gap-5 p-2 px-5 md:px-16">
-                {productList.map((item) => {
+                {productList.map((item, index) => {
                     return (
-                        <div className="border-[2px] border-gray-600 rounded-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer relative shadow-lg shadow-gray-800">
+                        <div
+                            key={index}
+                            className="border-[2px] border-gray-600 rounded-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer relative shadow-lg shadow-gray-800"
+                        >
                             <video
                                 src={item.video}
                                 autoPlay

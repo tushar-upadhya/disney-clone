@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import api from "../api/api";
+import { fetchTrendingVideos } from "../api/api";
 
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
@@ -15,9 +15,9 @@ const Slider = () => {
 
     const getTrendingMovie = async () => {
         try {
-            const response = await api.fetchTrendingVideos();
-            console.log("response:", response.results);
-            setMovieList(response.results);
+            const response = await fetchTrendingVideos();
+            console.log("response:", response.data.results);
+            setMovieList(response.data.results);
         } catch (error) {
             console.error("Error fetching trending movies:", error);
             setMovieList([]);
