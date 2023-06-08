@@ -1,4 +1,4 @@
-import logo from "../../assets/disney.png";
+import logo from "../../assets/image/disney.png ";
 import user from "../../assets/user.jpg";
 
 import {
