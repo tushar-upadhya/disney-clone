@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import api from "../api/api";
+import { getGenreById } from "../api/api";
 
 const Movies = ({ id }) => {
     useEffect(() => {
         movieByGenreId();
-    });
+    }, []);
 
     const movieByGenreId = () => {
-        api.getGenreById(id).then((response) => {
+        getGenreById(id).then((response) => {
             console.log("response:", response.data.results);
         });
     };

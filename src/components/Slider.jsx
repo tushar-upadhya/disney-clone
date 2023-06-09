@@ -16,10 +16,10 @@ const Slider = () => {
     const getTrendingMovie = async () => {
         try {
             const response = await fetchTrendingVideos();
-            console.log("response:", response.data.results);
+            // console.log("response:", response.data.results);
             setMovieList(response.data.results);
         } catch (error) {
-            console.error("Error fetching trending movies:", error);
+            // console.error("Error fetching trending movies:", error);
             setMovieList([]);
         }
     };
