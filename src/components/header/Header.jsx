@@ -57,7 +57,7 @@ const Header = () => {
                     />
                 ))}
             </div>
-            <img src={user} alt="user_image" class="w-10 rounded-full " />
+            <img src={user} alt="user_image" class="w-10 rounded-full  " />
         </div>
     );
 };

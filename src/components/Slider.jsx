@@ -56,7 +56,7 @@ const Slider = () => {
                         key={index}
                         src={image + item.backdrop_path}
                         alt={`Movie ${index}`}
-                        className="min-w-full md:h-[310px] object-cover object-left-top mr-5 rounded-md hover:border-[3px] border-gray-100 transition-all duration-100 ease-in"
+                        className="min-w-full md:h-[310px] object-fill object-left-top mr-5 rounded-md hover:border-[3px] border-gray-100 transition-all duration-100 ease-in"
                     />
                 ))}
             </div>
