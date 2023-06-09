@@ -18,7 +18,7 @@ const Movies = ({ id }) => {
     };
 
     return (
-        <div>
+        <div className="flex overflow-x-auto gap-8 scrollbar-none pt-5 px-3 pb-10">
             {movies.map((item, index) => (
                 <MovieCart movies={item} />
             ))}
