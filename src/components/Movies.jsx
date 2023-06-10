@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { getGenreById } from "../api/api";
 
-import MovieCart from "./header/MovieCart";
+import MovieCart from "./MovieCart";
+import HrMovieCard from "./HrMovieCard";
 
-const Movies = ({ id }) => {
+const Movies = ({ id, index_ }) => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
@@ -20,7 +21,13 @@ const Movies = ({ id }) => {
     return (
         <div className="flex overflow-x-auto gap-8 scrollbar-none pt-5 px-3 pb-10">
             {movies.map((item, index) => (
-                <MovieCart movies={item} />
+                <>
+                    {index_ % 3 == 0 ? (
+                        <HrMovieCard movies={item} />
+                    ) : (
+                        <MovieCart movies={item} />
+                    )}
+                </>
             ))}
         </div>
     );

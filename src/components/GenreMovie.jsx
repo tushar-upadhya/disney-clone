@@ -12,7 +12,7 @@ const GenreMovie = () => {
                                 {item.name}
                             </h2>
 
-                            <Movies id={item.id} />
+                            <Movies id={item.id} index_={index} />
                         </div>
                     )
             )}
