@@ -6,8 +6,6 @@ A Disney Plus clone web application built with ReactJS, Tailwind CSS, and Vite. 
 
 ## Features
 
--   Browse and watch a collection of Disney movies and TV shows.
--   User authentication and account management.
 -   Responsive design for optimal viewing experience on different devices.
 
 ## Technologies Used
@@ -16,19 +14,6 @@ A Disney Plus clone web application built with ReactJS, Tailwind CSS, and Vite. 
 -   Tailwind CSS
 -   Vite
 
-## Getting Started
+## Data API
 
-Follow the instructions below to get the project up and running on your local machine.
-
-### Prerequisites
-
--   Node.js (version X.X.X)
--   npm (version X.X.X) or Yarn (version X.X.X)
-
-### Installation
-
-1. Clone the repository:
-
-    ```bash
-    git clone [repository URL]
-    ```
+The Disney Plus Clone utilizes a data API to fetch movie and TV show information. The API provides the necessary data for populating the app's content, including titles, descriptions, images, and video sources. The API used in this project is [tmdb], which offers a wide range of Disney-related content.
